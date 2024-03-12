@@ -1,0 +1,14 @@
+main.c:86:6:setSequence	3
+main.c:108:6:HAL_GPIO_EXTI_Callback	4
+main.c:118:6:HAL_TIM_PeriodElapsedCallback	1
+main.c:124:6:HAL_UART_RxCpltCallback	1
+main.c:146:6:HAL_ADC_ConvCpltCallback	1
+main.c:163:5:main	16
+main.c:341:6:SystemClock_Config	4
+main.c:391:13:MX_ADC1_Init	4
+main.c:458:13:MX_TIM1_Init	7
+main.c:536:13:MX_TIM2_Init	4
+main.c:581:13:MX_USART2_UART_Init	2
+main.c:614:13:MX_DMA_Init	1
+main.c:632:13:MX_GPIO_Init	1
+main.c:690:6:Error_Handler	1
