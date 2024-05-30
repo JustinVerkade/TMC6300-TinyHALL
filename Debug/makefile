@@ -60,8 +60,8 @@ all: main-build
 main-build: TMC6300_HAL.elf secondary-outputs
 
 # Tool invocations
-TMC6300_HAL.elf TMC6300_HAL.map: $(OBJS) $(USER_OBJS) C:\Users\J.Verkade\OneDrive\Scripts\STM\TMC6300_HAL\STM32L431KBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TMC6300_HAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\J.Verkade\OneDrive\Scripts\STM\TMC6300_HAL\STM32L431KBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TMC6300_HAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TMC6300_HAL.elf TMC6300_HAL.map: $(OBJS) $(USER_OBJS) C:\Users\J.Verkade\Desktop\Programming\TMC6300-TinyHALL\STM32L431KBUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TMC6300_HAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\J.Verkade\Desktop\Programming\TMC6300-TinyHALL\STM32L431KBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TMC6300_HAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

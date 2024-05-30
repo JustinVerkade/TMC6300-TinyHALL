@@ -1,841 +1,2514 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid 5582db20-f3b7-4927-ac22-6cff421c3b8f)
-
-  (paper "A5")
-
-  (lib_symbols
-    (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (id 0) (at 0.254 1.778 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C_Small" (id 1) (at 0.254 -2.032 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "capacitor cap" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Unpolarized capacitor, small symbol" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_Small_0_1"
-        (polyline
-          (pts
-            (xy -1.524 -0.508)
-            (xy 1.524 -0.508)
-          )
-          (stroke (width 0.3302) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 0.508)
-            (xy 1.524 0.508)
-          )
-          (stroke (width 0.3048) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "C_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (id 0) (at 0.762 0.508 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "R_Small" (id 1) (at 0.762 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R resistor" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor, small symbol" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_Small_0_1"
-        (rectangle (start -0.762 1.778) (end 0.762 -1.778)
-          (stroke (width 0.2032) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "R_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "SamacSys_Parts:SZESD8351P2T5G" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (id 0) (at 10.16 8.89 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom))
-      )
-      (property "Value" "SZESD8351P2T5G" (id 1) (at 10.16 6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom))
-      )
-      (property "Footprint" "SODFL1006X40N" (id 2) (at 10.16 3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF" (id 3) (at 10.16 1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT" (id 4) (at 10.16 -1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Height" "0.4" (id 5) (at 10.16 -3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Mouser Part Number" "863-SZESD8351P2T5G" (id 6) (at 10.16 -6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D" (id 7) (at 10.16 -8.89 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Manufacturer_Name" "onsemi" (id 8) (at 10.16 -11.43 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Manufacturer_Part_Number" "SZESD8351P2T5G" (id 9) (at 10.16 -13.97 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "ki_description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT" (id 10) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SZESD8351P2T5G_0_0"
-        (pin passive line (at 0 0 0) (length 5.08)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 0 180) (length 5.08)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "SZESD8351P2T5G_0_1"
-        (polyline
-          (pts
-            (xy 4.064 2.54)
-            (xy 5.08 2.032)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.032)
-            (xy 5.08 2.032)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.032)
-            (xy 6.096 -2.54)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 0)
-            (xy 10.16 2.54)
-            (xy 10.16 -2.54)
-            (xy 5.08 0)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "SamacSys_Parts:SZESD9101P2T5G" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (id 0) (at 10.16 8.89 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom))
-      )
-      (property "Value" "SZESD9101P2T5G" (id 1) (at 10.16 6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom))
-      )
-      (property "Footprint" "SODFL1006X40N" (id 2) (at 10.16 3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Datasheet" "http://www.onsemi.com/pub/Collateral/ESD9101-D.PDF" (id 3) (at 10.16 1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Description" "Low Capacitance ESD Protection Diodes for High Speed Data Lines" (id 4) (at 10.16 -1.27 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Height" "0.4" (id 5) (at 10.16 -3.81 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Mouser Part Number" "863-SZESD9101P2T5G" (id 6) (at 10.16 -6.35 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD9101P2T5G?qs=5aG0NVq1C4yTUV3vL3eSQg%3D%3D" (id 7) (at 10.16 -8.89 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Manufacturer_Name" "onsemi" (id 8) (at 10.16 -11.43 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "Manufacturer_Part_Number" "SZESD9101P2T5G" (id 9) (at 10.16 -13.97 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-      )
-      (property "ki_description" "Low Capacitance ESD Protection Diodes for High Speed Data Lines" (id 10) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SZESD9101P2T5G_0_0"
-        (pin passive line (at 0 0 0) (length 5.08)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 15.24 0 180) (length 5.08)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "SZESD9101P2T5G_0_1"
-        (polyline
-          (pts
-            (xy 4.064 2.54)
-            (xy 5.08 2.032)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.032)
-            (xy 5.08 2.032)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 -2.032)
-            (xy 6.096 -2.54)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 5.08 0)
-            (xy 10.16 2.54)
-            (xy 10.16 -2.54)
-            (xy 5.08 0)
-          )
-          (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-    )
-  )
-
-  (junction (at 125.73 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid 18e3f532-d893-400e-acea-56040e5ee0dd)
-  )
-  (junction (at 64.77 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid 21381404-7e83-41c4-a6ec-b9d77d61017b)
-  )
-  (junction (at 138.43 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid 3756fc3b-bb1e-481d-8693-5725ee0b7453)
-  )
-  (junction (at 88.9 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid 434949d5-8e9d-4e02-ad13-1a6d5d449650)
-  )
-  (junction (at 83.82 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid 4b17443b-98a9-48c5-b567-fe40cf6e97de)
-  )
-  (junction (at 106.68 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid a48ccc29-4897-4f35-b40b-29e639bd5dca)
-  )
-  (junction (at 62.23 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid b35d2cf9-26d5-4521-ad90-508af4e2861e)
-  )
-  (junction (at 52.07 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid c763bfc9-a803-4d3d-895c-e1365675307b)
-  )
-  (junction (at 101.6 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid d03263dc-8671-4c20-b2a7-55cdb5486037)
-  )
-  (junction (at 135.89 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid d06d3cc6-bb9e-47ad-b50b-3a548a217d04)
-  )
-  (junction (at 99.06 73.66) (diameter 0) (color 0 0 0 0)
-    (uuid ed15db9e-a143-4b34-a5ca-805cd3d36ddd)
-  )
-
-  (wire (pts (xy 83.82 29.21) (xy 83.82 31.75))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 0411574d-68b4-403f-acca-589f9eac63b1)
-  )
-  (wire (pts (xy 86.36 73.66) (xy 88.9 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 076d1c48-1f6e-47c6-a58b-dd18d4e57b59)
-  )
-  (wire (pts (xy 99.06 73.66) (xy 101.6 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 12dd128d-a297-463f-b827-221953717637)
-  )
-  (wire (pts (xy 133.35 73.66) (xy 135.89 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 1706a4f4-d653-4371-a7b1-418f477f0f08)
-  )
-  (wire (pts (xy 106.68 36.83) (xy 106.68 46.99))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 1821885a-d597-4e67-a6c5-6757d9cc20c6)
-  )
-  (wire (pts (xy 123.19 73.66) (xy 125.73 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 1ed153f5-2906-4862-9532-baeffb72a05d)
-  )
-  (wire (pts (xy 99.06 73.66) (xy 99.06 71.12))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 43c488dc-a66c-4817-b51d-ca306b6b86c4)
-  )
-  (wire (pts (xy 52.07 76.2) (xy 52.07 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 48310eb0-3b60-4c4e-b914-d785571edf2c)
-  )
-  (wire (pts (xy 106.68 29.21) (xy 106.68 31.75))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 5177d536-173b-43b6-bdb7-57df321798d0)
-  )
-  (wire (pts (xy 49.53 73.66) (xy 52.07 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 5236f9f4-7144-4f38-a0b4-1efd954e8924)
-  )
-  (wire (pts (xy 81.28 29.21) (xy 83.82 29.21))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 5574e81b-be9c-4c40-a195-251c919acb2f)
-  )
-  (wire (pts (xy 101.6 73.66) (xy 104.14 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 695c1d3b-617c-40a8-be0c-8a7d3b77b6a9)
-  )
-  (wire (pts (xy 125.73 76.2) (xy 125.73 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 7c3a7210-8be9-4626-92d1-96c740e54238)
-  )
-  (wire (pts (xy 64.77 73.66) (xy 67.31 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 84a89431-f40d-4a0b-8bb8-138de4d497fc)
-  )
-  (wire (pts (xy 62.23 73.66) (xy 64.77 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 85108978-dd4f-45ad-8f1b-4b22b1486711)
-  )
-  (wire (pts (xy 138.43 73.66) (xy 140.97 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 88d98bf9-f3aa-45d1-8043-f3b4a3a1579b)
-  )
-  (wire (pts (xy 88.9 73.66) (xy 91.44 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 93da1e58-f980-446b-b1f4-7876a4c3ae6e)
-  )
-  (wire (pts (xy 62.23 73.66) (xy 62.23 71.12))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 983625dc-ecd3-47c2-8e14-353d227f3c9b)
-  )
-  (wire (pts (xy 109.22 29.21) (xy 106.68 29.21))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 9a85c508-4538-48b1-b958-865e83e7c0f8)
-  )
-  (wire (pts (xy 96.52 73.66) (xy 99.06 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid a909f814-b116-448e-8397-8d0d641eb055)
-  )
-  (wire (pts (xy 83.82 29.21) (xy 106.68 29.21))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid aa33ebf6-e003-4ef8-a354-264e46300a05)
-  )
-  (wire (pts (xy 88.9 76.2) (xy 88.9 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid b68340bf-29c5-490a-aab6-f439025181fc)
-  )
-  (wire (pts (xy 135.89 73.66) (xy 138.43 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ba315779-bae5-42c6-9274-8955e03427f0)
-  )
-  (wire (pts (xy 125.73 73.66) (xy 128.27 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid c00ea5e7-8796-4a02-91ff-6f49fbf3bc81)
-  )
-  (wire (pts (xy 59.69 73.66) (xy 62.23 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid c4263c6b-3862-4b33-9edf-abf116b1f63b)
-  )
-  (wire (pts (xy 135.89 73.66) (xy 135.89 71.12))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid cbf94c15-52c5-42f0-85e5-3f4540a511fd)
-  )
-  (wire (pts (xy 52.07 73.66) (xy 54.61 73.66))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid eac76939-e4de-41e0-8407-3a8313dd7ed0)
-  )
-
-  (global_label "VSS" (shape input) (at 101.6 88.9 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 03d425d6-333a-4461-8457-e27e8b6e630d)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 101.5206 94.8207 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "VDD" (shape input) (at 135.89 66.04 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 213d06f2-db42-453f-87c2-2936440c0e46)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 135.8106 59.9983 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "VDD" (shape input) (at 62.23 66.04 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 25deba23-eede-4e65-ac95-45a8266f9f52)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 62.1506 59.9983 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "VDD" (shape input) (at 99.06 66.04 90) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 3873deca-5c07-4711-a0c2-3e3f2d3529f4)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 98.9806 59.9983 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "VSS" (shape input) (at 106.68 46.99 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 4fa8a7fb-9f19-4a6b-8e9c-b5ff1d98ba2c)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 106.6006 52.9107 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "VSS" (shape input) (at 125.73 81.28 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 67114c64-919c-4eda-8aa9-a26232a75602)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 125.6506 87.2007 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "VSS" (shape input) (at 52.07 81.28 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 7b730365-c5af-4b0a-8bdc-27d7df8bdf4f)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 51.9906 87.2007 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "VSS" (shape input) (at 138.43 88.9 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 92df3c4d-69ef-4044-96d4-eb42181c1690)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 138.3506 94.8207 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "VSS" (shape input) (at 64.77 88.9 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 93677701-524e-48db-aeab-a08941b3c121)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 64.6906 94.8207 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "VSS" (shape input) (at 83.82 46.99 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid aeb92db8-62e8-45ad-b2a9-e4e5cda24c61)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 83.7406 52.9107 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "VSS" (shape input) (at 88.9 81.28 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid cf1154b3-8952-4774-95d3-77c60c071082)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 88.8206 87.2007 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-
-  (hierarchical_label "OUTC" (shape output) (at 123.19 73.66 180)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 145b1cc6-6beb-47a1-b1eb-8f0aac70df50)
-  )
-  (hierarchical_label "OUTA" (shape output) (at 49.53 73.66 180)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 82bd6959-37a1-4876-a924-8afd8a71d90f)
-  )
-  (hierarchical_label "INA" (shape input) (at 67.31 73.66 0)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 85526146-d4fc-4355-938f-606974af1e0d)
-  )
-  (hierarchical_label "VCCIN" (shape input) (at 81.28 29.21 180)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a562b326-3a20-41ee-a985-6dbdbe7d3ec4)
-  )
-  (hierarchical_label "INC" (shape input) (at 140.97 73.66 0)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid a601deb9-465b-4a48-bfb2-11c6ed178480)
-  )
-  (hierarchical_label "OUTB" (shape output) (at 86.36 73.66 180)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid a7139d29-7be9-4d7b-bad7-cc3f7dd6f5b7)
-  )
-  (hierarchical_label "VCCOUT" (shape output) (at 109.22 29.21 0)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid bdde67ad-f03d-4d02-8e4c-400d48bbbf3a)
-  )
-  (hierarchical_label "INB" (shape input) (at 104.14 73.66 0)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid d2e6cee7-f008-4aa1-989b-d6df3d3e4c23)
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 57.15 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 22011011-7f6f-4456-89c2-aae35e4aeda0)
-    (property "Reference" "R401" (id 0) (at 57.15 67.31 90))
-    (property "Value" "220" (id 1) (at 57.15 69.85 90))
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 57.15 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 57.15 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ca09f6bd-2c64-423a-b82e-39b3b78caad3))
-    (pin "2" (uuid 8e12b747-42a1-4a7f-816c-c2d405a7c5e7))
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 62.23 68.58 180) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 24a0572e-8485-4237-9885-594d46796411)
-    (property "Reference" "R402" (id 0) (at 64.77 67.3099 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "2.2k" (id 1) (at 64.77 69.8499 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 62.23 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 62.23 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b86b319d-300d-4a22-90b0-bba3502dfcc4))
-    (pin "2" (uuid 58bb4aaa-8c11-460c-b723-d73284b69e1c))
-  )
-
-  (symbol (lib_id "SamacSys_Parts:SZESD8351P2T5G") (at 138.43 73.66 270) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 273f0294-3e00-4a56-af6b-f6882c861638)
-    (property "Reference" "D404" (id 0) (at 142.24 79.5019 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SZESD8351P2T5G" (id 1) (at 142.24 82.0419 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SamacSys_Parts:SODFL1006X40N" (id 2) (at 142.24 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF" (id 3) (at 139.7 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT" (id 4) (at 137.16 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Height" "0.4" (id 5) (at 134.62 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Part Number" "863-SZESD8351P2T5G" (id 6) (at 132.08 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D" (id 7) (at 129.54 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Name" "onsemi" (id 8) (at 127 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Part_Number" "SZESD8351P2T5G" (id 9) (at 124.46 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 92f0eea5-77ae-4b6e-a84e-f83a762aadd8))
-    (pin "2" (uuid 012a01f8-2e1d-4305-9089-1106a6bb0f12))
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 88.9 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 3096bb13-e23d-4f4f-b3d4-602af5c7d722)
-    (property "Reference" "C402" (id 0) (at 91.44 77.4762 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (id 1) (at 91.44 80.0162 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (id 2) (at 88.9 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 88.9 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 46944d79-4c36-475b-98c2-95035d23e713))
-    (pin "2" (uuid 20e38ac0-55f6-40bb-ae07-ad9c0a53fcf9))
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 52.07 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 32299f94-9201-4606-abf1-dbbf1406f228)
-    (property "Reference" "C401" (id 0) (at 54.61 77.4762 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (id 1) (at 54.61 80.0162 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (id 2) (at 52.07 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 52.07 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1b4a5899-e26d-43ee-a6ea-250f8f478fd3))
-    (pin "2" (uuid 3ff876b6-1ac8-4342-ba89-f220e615e9ae))
-  )
-
-  (symbol (lib_id "SamacSys_Parts:SZESD8351P2T5G") (at 64.77 73.66 270) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 408843d3-17fb-4b0e-9d36-fec0f49ebc61)
-    (property "Reference" "D401" (id 0) (at 68.58 79.5019 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SZESD8351P2T5G" (id 1) (at 68.58 82.0419 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SamacSys_Parts:SODFL1006X40N" (id 2) (at 68.58 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF" (id 3) (at 66.04 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT" (id 4) (at 63.5 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Height" "0.4" (id 5) (at 60.96 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Part Number" "863-SZESD8351P2T5G" (id 6) (at 58.42 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D" (id 7) (at 55.88 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Name" "onsemi" (id 8) (at 53.34 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Part_Number" "SZESD8351P2T5G" (id 9) (at 50.8 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid d34063a2-c1b6-43cd-b4c4-96187ebdd7e5))
-    (pin "2" (uuid 21e73d7f-b954-449b-856d-6ebc9a071448))
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 99.06 68.58 180) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 55c35e23-391d-4218-87fa-076e9145fa96)
-    (property "Reference" "R404" (id 0) (at 101.6 67.3099 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "2.2k" (id 1) (at 101.6 69.8499 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 99.06 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 99.06 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b55472b8-aee7-46d1-93d1-2d017ffb5258))
-    (pin "2" (uuid de62e34d-4ff4-4923-88ef-129939e446e1))
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 93.98 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 96a364a2-1ed1-4a72-871b-233e1c363924)
-    (property "Reference" "R403" (id 0) (at 93.98 67.31 90))
-    (property "Value" "220" (id 1) (at 93.98 69.85 90))
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 93.98 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 93.98 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e27fc073-6d2d-4af4-8d74-4f2ff98dce86))
-    (pin "2" (uuid 469679dd-48ba-4b3c-895c-af688364d64f))
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 130.81 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 9de12ef9-90ed-4024-9459-44d461965dcd)
-    (property "Reference" "R405" (id 0) (at 130.81 67.31 90))
-    (property "Value" "220" (id 1) (at 130.81 69.85 90))
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 130.81 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 130.81 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fd82801f-524f-4d46-b202-465573a0726f))
-    (pin "2" (uuid 2a1a27c0-e235-4904-9fc8-863b2581155b))
-  )
-
-  (symbol (lib_id "SamacSys_Parts:SZESD9101P2T5G") (at 83.82 31.75 270) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid a5cb5526-8f9f-4b0b-a064-a3ecb41b3eab)
-    (property "Reference" "D402" (id 0) (at 87.63 37.5919 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SZESD9101P2T5G" (id 1) (at 87.63 40.1319 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SamacSys_Parts:SODFL1006X40N" (id 2) (at 87.63 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "http://www.onsemi.com/pub/Collateral/ESD9101-D.PDF" (id 3) (at 85.09 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Description" "Low Capacitance ESD Protection Diodes for High Speed Data Lines" (id 4) (at 82.55 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Height" "0.4" (id 5) (at 80.01 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Part Number" "863-SZESD9101P2T5G" (id 6) (at 77.47 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD9101P2T5G?qs=5aG0NVq1C4yTUV3vL3eSQg%3D%3D" (id 7) (at 74.93 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Name" "onsemi" (id 8) (at 72.39 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Part_Number" "SZESD9101P2T5G" (id 9) (at 69.85 41.91 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid 88850b56-5cc2-45b6-9ef4-004dfe30fbf4))
-    (pin "2" (uuid dd7123c7-5b27-4608-8b52-b3021f6b5fcf))
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 106.68 34.29 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid a887681f-610f-48a8-8958-c6daa3bed287)
-    (property "Reference" "C403" (id 0) (at 109.22 33.0262 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "2.2u" (id 1) (at 109.22 35.5662 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 106.68 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 106.68 34.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1cf277af-8f1c-4be3-aee1-077b5a70c0fc))
-    (pin "2" (uuid 9a86034c-d8d2-4897-8e09-4bc3a630c507))
-  )
-
-  (symbol (lib_id "SamacSys_Parts:SZESD8351P2T5G") (at 101.6 73.66 270) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid bf906334-6e67-4c69-8afe-fc5e79e52965)
-    (property "Reference" "D403" (id 0) (at 105.41 79.5019 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "SZESD8351P2T5G" (id 1) (at 105.41 82.0419 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "SamacSys_Parts:SODFL1006X40N" (id 2) (at 105.41 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF" (id 3) (at 102.87 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT" (id 4) (at 100.33 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Height" "0.4" (id 5) (at 97.79 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Part Number" "863-SZESD8351P2T5G" (id 6) (at 95.25 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D" (id 7) (at 92.71 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Name" "onsemi" (id 8) (at 90.17 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Manufacturer_Part_Number" "SZESD8351P2T5G" (id 9) (at 87.63 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (pin "1" (uuid c25bed44-8d22-4ea0-9389-c785d416fddc))
-    (pin "2" (uuid 163e4c67-fd93-416a-8b4a-a58ebd731954))
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 125.73 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid c5a258bb-2505-45ca-baa5-580b477ce6f4)
-    (property "Reference" "C404" (id 0) (at 128.27 77.4762 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "100n" (id 1) (at 128.27 80.0162 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (id 2) (at 125.73 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 125.73 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4f730809-9986-4979-9ec6-ace992df58d9))
-    (pin "2" (uuid 9384f76c-61a7-4003-b9b2-a43962c243b1))
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 135.89 68.58 180) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid fe4ecbdb-f5fc-479d-863e-19a22c1dea22)
-    (property "Reference" "R406" (id 0) (at 138.43 67.3099 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "2.2k" (id 1) (at 138.43 69.8499 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 135.89 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 135.89 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0ae9bde9-6479-462b-9e73-afe42a4f3734))
-    (pin "2" (uuid 3167db8d-c9f6-4bee-9a65-03a9d1f2f17f))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "5582db20-f3b7-4927-ac22-6cff421c3b8f")
+	(paper "A5")
+	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:SZESD8351P2T5G"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 10.16 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SZESD8351P2T5G"
+				(at 10.16 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SODFL1006X40N"
+				(at 10.16 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF"
+				(at 10.16 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT"
+				(at 10.16 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.4"
+				(at 10.16 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "863-SZESD8351P2T5G"
+				(at 10.16 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D"
+				(at 10.16 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "onsemi"
+				(at 10.16 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "SZESD8351P2T5G"
+				(at 10.16 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(symbol "SZESD8351P2T5G_0_0"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SZESD8351P2T5G_0_1"
+				(polyline
+					(pts
+						(xy 4.064 2.54) (xy 5.08 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.032) (xy 5.08 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.032) (xy 6.096 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 10.16 2.54) (xy 10.16 -2.54) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys_Parts:SZESD9101P2T5G"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 10.16 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SZESD9101P2T5G"
+				(at 10.16 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SODFL1006X40N"
+				(at 10.16 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.onsemi.com/pub/Collateral/ESD9101-D.PDF"
+				(at 10.16 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low Capacitance ESD Protection Diodes for High Speed Data Lines"
+				(at 10.16 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.4"
+				(at 10.16 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "863-SZESD9101P2T5G"
+				(at 10.16 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD9101P2T5G?qs=5aG0NVq1C4yTUV3vL3eSQg%3D%3D"
+				(at 10.16 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "onsemi"
+				(at 10.16 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "SZESD9101P2T5G"
+				(at 10.16 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(symbol "SZESD9101P2T5G_0_0"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SZESD9101P2T5G_0_1"
+				(polyline
+					(pts
+						(xy 4.064 2.54) (xy 5.08 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.032) (xy 5.08 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.032) (xy 6.096 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 10.16 2.54) (xy 10.16 -2.54) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 125.73 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18e3f532-d893-400e-acea-56040e5ee0dd")
+	)
+	(junction
+		(at 64.77 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21381404-7e83-41c4-a6ec-b9d77d61017b")
+	)
+	(junction
+		(at 138.43 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3756fc3b-bb1e-481d-8693-5725ee0b7453")
+	)
+	(junction
+		(at 88.9 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "434949d5-8e9d-4e02-ad13-1a6d5d449650")
+	)
+	(junction
+		(at 83.82 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b17443b-98a9-48c5-b567-fe40cf6e97de")
+	)
+	(junction
+		(at 106.68 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a48ccc29-4897-4f35-b40b-29e639bd5dca")
+	)
+	(junction
+		(at 62.23 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b35d2cf9-26d5-4521-ad90-508af4e2861e")
+	)
+	(junction
+		(at 52.07 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c763bfc9-a803-4d3d-895c-e1365675307b")
+	)
+	(junction
+		(at 101.6 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d03263dc-8671-4c20-b2a7-55cdb5486037")
+	)
+	(junction
+		(at 135.89 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d06d3cc6-bb9e-47ad-b50b-3a548a217d04")
+	)
+	(junction
+		(at 99.06 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed15db9e-a143-4b34-a5ca-805cd3d36ddd")
+	)
+	(wire
+		(pts
+			(xy 83.82 29.21) (xy 83.82 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0411574d-68b4-403f-acca-589f9eac63b1")
+	)
+	(wire
+		(pts
+			(xy 86.36 73.66) (xy 88.9 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "076d1c48-1f6e-47c6-a58b-dd18d4e57b59")
+	)
+	(wire
+		(pts
+			(xy 99.06 73.66) (xy 101.6 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12dd128d-a297-463f-b827-221953717637")
+	)
+	(wire
+		(pts
+			(xy 133.35 73.66) (xy 135.89 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1706a4f4-d653-4371-a7b1-418f477f0f08")
+	)
+	(wire
+		(pts
+			(xy 106.68 36.83) (xy 106.68 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1821885a-d597-4e67-a6c5-6757d9cc20c6")
+	)
+	(wire
+		(pts
+			(xy 123.19 73.66) (xy 125.73 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed153f5-2906-4862-9532-baeffb72a05d")
+	)
+	(wire
+		(pts
+			(xy 99.06 73.66) (xy 99.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43c488dc-a66c-4817-b51d-ca306b6b86c4")
+	)
+	(wire
+		(pts
+			(xy 52.07 76.2) (xy 52.07 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48310eb0-3b60-4c4e-b914-d785571edf2c")
+	)
+	(wire
+		(pts
+			(xy 106.68 29.21) (xy 106.68 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5177d536-173b-43b6-bdb7-57df321798d0")
+	)
+	(wire
+		(pts
+			(xy 49.53 73.66) (xy 52.07 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5236f9f4-7144-4f38-a0b4-1efd954e8924")
+	)
+	(wire
+		(pts
+			(xy 81.28 29.21) (xy 83.82 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5574e81b-be9c-4c40-a195-251c919acb2f")
+	)
+	(wire
+		(pts
+			(xy 101.6 73.66) (xy 104.14 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695c1d3b-617c-40a8-be0c-8a7d3b77b6a9")
+	)
+	(wire
+		(pts
+			(xy 125.73 76.2) (xy 125.73 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c3a7210-8be9-4626-92d1-96c740e54238")
+	)
+	(wire
+		(pts
+			(xy 64.77 73.66) (xy 67.31 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84a89431-f40d-4a0b-8bb8-138de4d497fc")
+	)
+	(wire
+		(pts
+			(xy 62.23 73.66) (xy 64.77 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85108978-dd4f-45ad-8f1b-4b22b1486711")
+	)
+	(wire
+		(pts
+			(xy 138.43 73.66) (xy 140.97 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88d98bf9-f3aa-45d1-8043-f3b4a3a1579b")
+	)
+	(wire
+		(pts
+			(xy 88.9 73.66) (xy 91.44 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93da1e58-f980-446b-b1f4-7876a4c3ae6e")
+	)
+	(wire
+		(pts
+			(xy 62.23 73.66) (xy 62.23 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "983625dc-ecd3-47c2-8e14-353d227f3c9b")
+	)
+	(wire
+		(pts
+			(xy 109.22 29.21) (xy 106.68 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a85c508-4538-48b1-b958-865e83e7c0f8")
+	)
+	(wire
+		(pts
+			(xy 96.52 73.66) (xy 99.06 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a909f814-b116-448e-8397-8d0d641eb055")
+	)
+	(wire
+		(pts
+			(xy 83.82 29.21) (xy 106.68 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa33ebf6-e003-4ef8-a354-264e46300a05")
+	)
+	(wire
+		(pts
+			(xy 88.9 76.2) (xy 88.9 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b68340bf-29c5-490a-aab6-f439025181fc")
+	)
+	(wire
+		(pts
+			(xy 135.89 73.66) (xy 138.43 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba315779-bae5-42c6-9274-8955e03427f0")
+	)
+	(wire
+		(pts
+			(xy 125.73 73.66) (xy 128.27 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c00ea5e7-8796-4a02-91ff-6f49fbf3bc81")
+	)
+	(wire
+		(pts
+			(xy 59.69 73.66) (xy 62.23 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4263c6b-3862-4b33-9edf-abf116b1f63b")
+	)
+	(wire
+		(pts
+			(xy 135.89 73.66) (xy 135.89 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbf94c15-52c5-42f0-85e5-3f4540a511fd")
+	)
+	(wire
+		(pts
+			(xy 52.07 73.66) (xy 54.61 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eac76939-e4de-41e0-8407-3a8313dd7ed0")
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 101.6 88.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "03d425d6-333a-4461-8457-e27e8b6e630d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.5206 94.8207 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 135.89 66.04 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "213d06f2-db42-453f-87c2-2936440c0e46")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.8106 59.9983 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 62.23 66.04 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25deba23-eede-4e65-ac95-45a8266f9f52")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.1506 59.9983 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 99.06 66.04 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3873deca-5c07-4711-a0c2-3e3f2d3529f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.9806 59.9983 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 106.68 46.99 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4fa8a7fb-9f19-4a6b-8e9c-b5ff1d98ba2c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.6006 52.9107 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 125.73 81.28 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67114c64-919c-4eda-8aa9-a26232a75602")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 125.6506 87.2007 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 52.07 81.28 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b730365-c5af-4b0a-8bdc-27d7df8bdf4f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 51.9906 87.2007 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 138.43 88.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "92df3c4d-69ef-4044-96d4-eb42181c1690")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.3506 94.8207 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 64.77 88.9 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "93677701-524e-48db-aeab-a08941b3c121")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 64.6906 94.8207 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 83.82 46.99 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aeb92db8-62e8-45ad-b2a9-e4e5cda24c61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.7406 52.9107 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VSS"
+		(shape input)
+		(at 88.9 81.28 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf1154b3-8952-4774-95d3-77c60c071082")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.8206 87.2007 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(hierarchical_label "OUTC"
+		(shape output)
+		(at 123.19 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "145b1cc6-6beb-47a1-b1eb-8f0aac70df50")
+	)
+	(hierarchical_label "OUTA"
+		(shape output)
+		(at 49.53 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "82bd6959-37a1-4876-a924-8afd8a71d90f")
+	)
+	(hierarchical_label "INA"
+		(shape input)
+		(at 67.31 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "85526146-d4fc-4355-938f-606974af1e0d")
+	)
+	(hierarchical_label "VCCIN"
+		(shape input)
+		(at 81.28 29.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a562b326-3a20-41ee-a985-6dbdbe7d3ec4")
+	)
+	(hierarchical_label "INC"
+		(shape input)
+		(at 140.97 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a601deb9-465b-4a48-bfb2-11c6ed178480")
+	)
+	(hierarchical_label "OUTB"
+		(shape output)
+		(at 86.36 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a7139d29-7be9-4d7b-bad7-cc3f7dd6f5b7")
+	)
+	(hierarchical_label "VCCOUT"
+		(shape output)
+		(at 109.22 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bdde67ad-f03d-4d02-8e4c-400d48bbbf3a")
+	)
+	(hierarchical_label "INB"
+		(shape input)
+		(at 104.14 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2e6cee7-f008-4aa1-989b-d6df3d3e4c23")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 57.15 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22011011-7f6f-4456-89c2-aae35e4aeda0")
+		(property "Reference" "R401"
+			(at 57.15 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 57.15 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 57.15 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca09f6bd-2c64-423a-b82e-39b3b78caad3")
+		)
+		(pin "2"
+			(uuid "8e12b747-42a1-4a7f-816c-c2d405a7c5e7")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "R401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 62.23 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24a0572e-8485-4237-9885-594d46796411")
+		(property "Reference" "R402"
+			(at 64.77 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 64.77 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 62.23 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b86b319d-300d-4a22-90b0-bba3502dfcc4")
+		)
+		(pin "2"
+			(uuid "58bb4aaa-8c11-460c-b723-d73284b69e1c")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "R402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:SZESD8351P2T5G")
+		(at 138.43 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "273f0294-3e00-4a56-af6b-f6882c861638")
+		(property "Reference" "D404"
+			(at 142.24 79.5019 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SZESD8351P2T5G"
+			(at 142.24 82.0419 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SODFL1006X40N"
+			(at 142.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF"
+			(at 139.7 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT"
+			(at 137.16 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
+			(at 134.62 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "863-SZESD8351P2T5G"
+			(at 132.08 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D"
+			(at 129.54 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "onsemi"
+			(at 127 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SZESD8351P2T5G"
+			(at 124.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92f0eea5-77ae-4b6e-a84e-f83a762aadd8")
+		)
+		(pin "2"
+			(uuid "012a01f8-2e1d-4305-9089-1106a6bb0f12")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "D404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 88.9 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3096bb13-e23d-4f4f-b3d4-602af5c7d722")
+		(property "Reference" "C402"
+			(at 91.44 77.4762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 91.44 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 88.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46944d79-4c36-475b-98c2-95035d23e713")
+		)
+		(pin "2"
+			(uuid "20e38ac0-55f6-40bb-ae07-ad9c0a53fcf9")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "C402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 52.07 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32299f94-9201-4606-abf1-dbbf1406f228")
+		(property "Reference" "C401"
+			(at 54.61 77.4762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 54.61 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 52.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b4a5899-e26d-43ee-a6ea-250f8f478fd3")
+		)
+		(pin "2"
+			(uuid "3ff876b6-1ac8-4342-ba89-f220e615e9ae")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "C401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:SZESD8351P2T5G")
+		(at 64.77 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "408843d3-17fb-4b0e-9d36-fec0f49ebc61")
+		(property "Reference" "D401"
+			(at 68.58 79.5019 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SZESD8351P2T5G"
+			(at 68.58 82.0419 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SODFL1006X40N"
+			(at 68.58 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF"
+			(at 66.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT"
+			(at 63.5 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
+			(at 60.96 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "863-SZESD8351P2T5G"
+			(at 58.42 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D"
+			(at 55.88 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "onsemi"
+			(at 53.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SZESD8351P2T5G"
+			(at 50.8 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d34063a2-c1b6-43cd-b4c4-96187ebdd7e5")
+		)
+		(pin "2"
+			(uuid "21e73d7f-b954-449b-856d-6ebc9a071448")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "D401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 99.06 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c35e23-391d-4218-87fa-076e9145fa96")
+		(property "Reference" "R404"
+			(at 101.6 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 101.6 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 99.06 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b55472b8-aee7-46d1-93d1-2d017ffb5258")
+		)
+		(pin "2"
+			(uuid "de62e34d-4ff4-4923-88ef-129939e446e1")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "R404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 93.98 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96a364a2-1ed1-4a72-871b-233e1c363924")
+		(property "Reference" "R403"
+			(at 93.98 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 93.98 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 93.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 93.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e27fc073-6d2d-4af4-8d74-4f2ff98dce86")
+		)
+		(pin "2"
+			(uuid "469679dd-48ba-4b3c-895c-af688364d64f")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "R403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 130.81 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9de12ef9-90ed-4024-9459-44d461965dcd")
+		(property "Reference" "R405"
+			(at 130.81 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 130.81 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 130.81 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd82801f-524f-4d46-b202-465573a0726f")
+		)
+		(pin "2"
+			(uuid "2a1a27c0-e235-4904-9fc8-863b2581155b")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "R405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:SZESD9101P2T5G")
+		(at 83.82 31.75 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5cb5526-8f9f-4b0b-a064-a3ecb41b3eab")
+		(property "Reference" "D402"
+			(at 87.63 37.5919 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SZESD9101P2T5G"
+			(at 87.63 40.1319 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SODFL1006X40N"
+			(at 87.63 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub/Collateral/ESD9101-D.PDF"
+			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low Capacitance ESD Protection Diodes for High Speed Data Lines"
+			(at 82.55 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
+			(at 80.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "863-SZESD9101P2T5G"
+			(at 77.47 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD9101P2T5G?qs=5aG0NVq1C4yTUV3vL3eSQg%3D%3D"
+			(at 74.93 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "onsemi"
+			(at 72.39 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SZESD9101P2T5G"
+			(at 69.85 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88850b56-5cc2-45b6-9ef4-004dfe30fbf4")
+		)
+		(pin "2"
+			(uuid "dd7123c7-5b27-4608-8b52-b3021f6b5fcf")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "D402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 106.68 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a887681f-610f-48a8-8958-c6daa3bed287")
+		(property "Reference" "C403"
+			(at 109.22 33.0262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2u"
+			(at 109.22 35.5662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 106.68 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cf277af-8f1c-4be3-aee1-077b5a70c0fc")
+		)
+		(pin "2"
+			(uuid "9a86034c-d8d2-4897-8e09-4bc3a630c507")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "C403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys_Parts:SZESD8351P2T5G")
+		(at 101.6 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf906334-6e67-4c69-8afe-fc5e79e52965")
+		(property "Reference" "D403"
+			(at 105.41 79.5019 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SZESD8351P2T5G"
+			(at 105.41 82.0419 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SamacSys_Parts:SODFL1006X40N"
+			(at 105.41 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD8351P2-D.PDF"
+			(at 102.87 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESD Suppressors / TVS Diodes LOW CAP SNAPBACK ESD PROT"
+			(at 100.33 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.4"
+			(at 97.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "863-SZESD8351P2T5G"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi/SZESD8351P2T5G?qs=dbuNSGnowt0hk7yUFmffJA%3D%3D"
+			(at 92.71 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "onsemi"
+			(at 90.17 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SZESD8351P2T5G"
+			(at 87.63 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c25bed44-8d22-4ea0-9389-c785d416fddc")
+		)
+		(pin "2"
+			(uuid "163e4c67-fd93-416a-8b4a-a58ebd731954")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "D403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 125.73 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5a258bb-2505-45ca-baa5-580b477ce6f4")
+		(property "Reference" "C404"
+			(at 128.27 77.4762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 128.27 80.0162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f730809-9986-4979-9ec6-ace992df58d9")
+		)
+		(pin "2"
+			(uuid "9384f76c-61a7-4003-b9b2-a43962c243b1")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "C404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 135.89 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe4ecbdb-f5fc-479d-863e-19a22c1dea22")
+		(property "Reference" "R406"
+			(at 138.43 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 138.43 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 135.89 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ae9bde9-6479-462b-9e73-afe42a4f3734")
+		)
+		(pin "2"
+			(uuid "3167db8d-c9f6-4bee-9a65-03a9d1f2f17f")
+		)
+		(instances
+			(project "TMC6300_HAL"
+				(path "/4362354f-11ac-4dea-b60d-add0e5e0adca/ff6dfcb8-fb10-47fa-8d68-231d67c6ce36"
+					(reference "R406")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
